@@ -5,8 +5,9 @@ public class Gun implements Serializable {
 
     private String name;
     private double price;
+    private String Description;
 
-    public Gun(String name, double price) {
+    public Gun(String name, double price, String Description) {
         this.name = name;
         this.price = price;
     }
@@ -17,5 +18,9 @@ public class Gun implements Serializable {
 
     public double getPrice() {
         return price;
+    }
+
+    public String getDescription() {
+        return Description;
     }
 }

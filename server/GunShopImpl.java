@@ -10,8 +10,8 @@ public class GunShopImpl extends UnicastRemoteObject implements GunShop {
     protected GunShopImpl() throws RemoteException {
         super();
         guns = new ArrayList<>();
-        guns.add(new Gun("AK-47", 1200));
-        guns.add(new Gun("M16", 1500));
+        guns.add(new Gun("AK-47", 1200, "gun 1"));
+        guns.add(new Gun("M16", 1500, "gun 2"));
         cart = new ArrayList<>();
     }
 
